@@ -200,6 +200,7 @@ public:
     BoolSetting showBadgesVanity = {"/appearance/badges/vanity", true};
     BoolSetting showBadgesChatterino = {"/appearance/badges/chatterino", true};
     BoolSetting showBadgesFfz = {"/appearance/badges/ffz", true};
+    BoolSetting showBadgesHomies = {"/appearance/badges/homies", true};
     BoolSetting useCustomFfzModeratorBadges = {
         "/appearance/badges/useCustomFfzModeratorBadges", true};
     BoolSetting useCustomFfzVipBadges = {
@@ -298,8 +299,9 @@ public:
     BoolSetting enableFFZChannelEmotes = {"/emotes/ffz/channel", true};
     BoolSetting enableSevenTVGlobalEmotes = {"/emotes/seventv/global", true};
     BoolSetting enableSevenTVChannelEmotes = {"/emotes/seventv/channel", true};
-    BoolSetting enableSevenTVPersonalEmotes = {"/emotes/seventv/personal",
-                                               true};
+    BoolSetting enableSevenTVPersonalEmotes = {"/emotes/seventv/personal", true};
+    BoolSetting enableHomiesGlobalEmotes = {"/emotes/homies/global", true};
+    BoolSetting enableHomiesChannelEmotes = {"/emotes/homies/channel", true};
     BoolSetting enableSevenTVEventAPI = {"/emotes/seventv/eventapi", true};
     BoolSetting sendSevenTVActivity = {"/emotes/seventv/sendActivity", true};
 

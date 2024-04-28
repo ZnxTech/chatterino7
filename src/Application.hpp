@@ -46,6 +46,7 @@ class IChatterinoBadges;
 class ChatterinoBadges;
 class SeventvPaints;
 class FfzBadges;
+class HomiesBadges;
 class SeventvBadges;
 class SeventvPersonalEmotes;
 class ImageUploader;
@@ -83,6 +84,7 @@ public:
     virtual Logging *getChatLogger() = 0;
     virtual IChatterinoBadges *getChatterinoBadges() = 0;
     virtual FfzBadges *getFfzBadges() = 0;
+    virtual HomiesBadges *getHomiesBadges() = 0;
     virtual SeventvBadges *getSeventvBadges() = 0;
     virtual IUserDataController *getUserData() = 0;
     virtual ISoundController *getSound() = 0;
@@ -158,6 +160,7 @@ public:
 
 private:
     FfzBadges *const ffzBadges{};
+    HomiesBadges *const homiesBadges{};
     SeventvBadges *const seventvBadges{};
     SeventvPaints *const seventvPaints{};
     SeventvPersonalEmotes *const seventvPersonalEmotes{};
@@ -217,6 +220,11 @@ public:
         assertInGuiThread();
 
         return this->updates;
+    }
+
+    HomiesBadges *getHomiesBadges() override
+    {
+        return this->homiesBadges;
     }
 
     SeventvPersonalEmotes *getSeventvPersonalEmotes() override

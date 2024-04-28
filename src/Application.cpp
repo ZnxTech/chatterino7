@@ -32,6 +32,7 @@
 #include "providers/bttv/BttvLiveUpdates.hpp"
 #include "providers/chatterino/ChatterinoBadges.hpp"
 #include "providers/ffz/FfzBadges.hpp"
+#include "providers/homies/HomiesBadges.hpp"
 #include "providers/irc/Irc2.hpp"
 #include "providers/seventv/eventapi/Dispatch.hpp"
 #include "providers/seventv/eventapi/Subscription.hpp"
@@ -136,6 +137,7 @@ Application::Application(Settings &_settings, const Paths &paths,
     , highlights(&this->emplace<HighlightController>())
     , twitch(&this->emplace<TwitchIrcServer>())
     , ffzBadges(&this->emplace<FfzBadges>())
+    , homiesBadges(&this->emplace<HomiesBadges>())
     , seventvBadges(&this->emplace<SeventvBadges>())
     , seventvPaints(&this->emplace<SeventvPaints>())
     , seventvPersonalEmotes(&this->emplace<SeventvPersonalEmotes>())
